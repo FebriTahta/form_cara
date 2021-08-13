@@ -51,7 +51,7 @@
 	<body>
 
 		{{-- <div class="wrapper" style="background-image: url({{ asset('assets/images/bg-registration-form-1.jpg') }});"> --}}
-        <div class="wrapper" style="background-color: rgb(78, 126, 78); text-transform: uppercase">
+        <div class="wrapper" style="background-color: rgb(78, 126, 78); style="text-transform: uppercase"">
 			<div class="inner">
 				<div class="image-holder">
 					<img src="{{ asset('images/11.jpg') }}" alt="">
