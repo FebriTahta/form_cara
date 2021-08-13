@@ -42,13 +42,14 @@
 
 	<body>
 
-		<div class="wrapper" style="background-image: url({{ asset('assets/images/bg-registration-form-1.jpg') }});">
+		{{-- <div class="wrapper" style="background-image: url({{ asset('assets/images/bg-registration-form-1.jpg') }});"> --}}
+        <div class="wrapper">
 			<div class="inner">
 				<div class="image-holder">
 					<img src="{{ asset('images/11.jpg') }}" alt="">
 				</div>
 				<form id="formsubmit" method="post" style="padding:3%">@csrf
-					<h3>Daftar Kehadiran</h3>
+					<h3>Daftar Kehadiran </h3>
                     <div class="form-wrapper">
                         <input type="hidden" name="acara_id" id="acara_id" value="{{ $acara->id }}">
 						<input type="text" style="padding: 1%" placeholder="Nama Lengkap" name="name" class="form-control" style="text-transform:capitalize" required>
