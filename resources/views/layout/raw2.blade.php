@@ -85,11 +85,13 @@
                             </select>
                             <i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
                         </div>
-                        <div class="card-body form-wrapper">
-                            <select name="kecamatan_id" id="kecamatan_id" class="form-control" style="padding: 1%" required>
-                                <option value="" disabled selected>Lembaga</option>
-                            </select>
-                            <i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
+                        <div class="card-body form-wrapper form-group">
+                            <label for="">donatur</label>
+                            <input type="radio" style="text-align: left" name="donatur" value="1"  required>Ya
+                            <input type="radio" name="donatur" value="0"  required>Tidak
+                        </div>
+                        <div class="form-group" style="margin-top: 10px">
+                            
                         </div>
                     </div>
                     <div class="form-group" style="margin-top: 10px">

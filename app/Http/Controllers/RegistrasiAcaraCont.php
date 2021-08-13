@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Peserta;
 use App\Models\Provinsi;
 use App\Models\Acara;
+use App\Models\Donatur;
 use Mail;
 use App\Mail\MailRegistrasiAcara;
 use Carbon\Carbon;
@@ -66,7 +67,7 @@ class RegistrasiAcaraCont extends Controller
         $peserta    = Peserta::where('name',$name)->where('acara_id', $acara_id)->where('telp',$telp)->first();
         if ($peserta == null) {
             # code...
-            Peserta::updateOrCreate(
+            $data_peserta = Peserta::updateOrCreate(
                 [
                   'id' => $request->id
                 ],
@@ -79,6 +80,16 @@ class RegistrasiAcaraCont extends Controller
                     'provinsi_id' => $provinsi,
                     'kabupaten_id' => $kabupaten,
                     'kecamatan_id' => $request->kecamatan_id,
+                ]
+            );
+
+            Donatur::updateOrCreate(
+                [
+                  'id' => $request->id
+                ],
+                [
+                    'peserta_id' => $data_peserta->id,
+                    'data'       => $request->donatur,
                 ]
             );
           
