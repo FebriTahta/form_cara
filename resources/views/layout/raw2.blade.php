@@ -18,7 +18,7 @@
         <meta property="og:site_name" content="Event Tilawatipusat">
         <meta property="og:title" content="Mengetuk Pintu Langit"/>
         <meta property="og:description" content="Do'a Bersama Terbebas Dari Covid-1" />
-        <meta property="og:image" itemprop="image" content="{{ asset('images/tes.jpg') }}">
+        <meta property="og:image" itemprop="image" content="{{ asset('images/tmb.jpeg') }}">
         <meta property="og:type" content="website" />
         <meta property="og:updated_time" content="1440432930" />
         
