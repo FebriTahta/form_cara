@@ -14,6 +14,14 @@
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+        <meta property="og:site_name" content="Event Tilawatipusat">
+        <meta property="og:title" content="Mengetuk Pintu Langit"/>
+        <meta property="og:description" content="Do'a Bersama Terbebas Dari Covid-1" />
+        <meta property="og:image" itemprop="image" content="{{ asset('images/tes.jpg') }}">
+        <meta property="og:type" content="website" />
+        <meta property="og:updated_time" content="1440432930" />
+        
         <style>
             .tombol {
             background-color: #615638; /* Green */
@@ -77,6 +85,12 @@
                             </select>
                             <i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
                         </div>
+                        <div class="card-body form-wrapper">
+                            <select name="kecamatan_id" id="kecamatan_id" class="form-control" style="padding: 1%" required>
+                                <option value="" disabled selected>Lembaga</option>
+                            </select>
+                            <i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
+                        </div>
                     </div>
                     <div class="form-group" style="margin-top: 10px">
                         <i class="zmdi zmdi-phone" style="margin-right: 10px"> </i>
@@ -84,6 +98,7 @@
                         <i class="zmdi zmdi-email" style="margin-right: 10px"> </i>
 						<input type="email" name="email" placeholder=" Email" class="form-control" required>
 					</div>
+
 					{{-- <div class="form-wrapper">
 						<input type="password" placeholder="Password" class="form-control">
 						<i class="zmdi zmdi-lock"></i>
