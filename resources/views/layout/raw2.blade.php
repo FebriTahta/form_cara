@@ -110,7 +110,7 @@
 						<i class="zmdi zmdi-lock"></i>
 					</div> --}}
                     <center>
-                        <small>pastikan data yang anda isikan</small>
+                        <small>pastikan data yang anda isikan benar</small>
                         <hr>
                     </center>
 					{{-- <button>Register
