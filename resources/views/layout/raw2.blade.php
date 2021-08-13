@@ -110,7 +110,7 @@
 						<i class="zmdi zmdi-lock"></i>
 					</div> --}}
                     <center>
-                        <small>pastikan data yang anda isikan adalah benar dan pastikan anda menghadiri kegiatan setelah mengisi form</small>
+                        <small>pastikan data yang anda isikan</small>
                         <hr>
                     </center>
 					{{-- <button>Register
