@@ -88,7 +88,7 @@
                         <div class="card-body form-wrapper form-group">
                             <label for="">donatur</label>
                             <input type="radio" style="text-align: left" name="donatur" value="1"  required>Ya
-                            <input type="radio" name="donatur" value="0"  required>Tidak
+                            <input type="radio" name="donatur" value="0"  required>Bukan
                         </div>
                         <div class="form-group" style="margin-top: 10px">
                             
