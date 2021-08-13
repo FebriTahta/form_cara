@@ -27,7 +27,7 @@ Route::get('/fetch6/{id}',[SubController::class, 'fetch6']);
 Route::get('/fetch7/{id}',[SubController::class, 'fetch7']);
 Route::get('/fetch8/{id}',[SubController::class, 'fetch8']);
 
-Route::get('/registrasi/{slug_acara}',[RegistrasiAcaraCont::class,'index'])->name('regis');
+Route::get('/form-kehadiran/{slug_acara}',[RegistrasiAcaraCont::class,'index'])->name('regis');
 Route::get('/tes',[RegistrasiAcaraCont::class,'tes'])->name('tes');
 
 Route::post('/submit-registrasi',[RegistrasiAcaraCont::class,'store'])->name('submit.registrasi');
